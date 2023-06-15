@@ -1,6 +1,15 @@
 const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
+const passport = require('passport')
+const flash = require('express-flash');
+const flash = require('express-flash'); 
+
+const initializePassport = require('./passport-config')
+initializePassport(
+  passport, 
+  email => users.find(user => user.email === email)
+)
 
 const users = []
 
