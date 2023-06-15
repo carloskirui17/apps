@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<h1>login Page</h1>
+<style>
+    *{
+        font-family: Noto Sans Mono;
+    }
+</style>
+<form action="/login" method="post" >
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required/>
+    </div>
+    <div>
+        <label for="email">email</label>
+        <input type="text" id="email" email="email" required/>
+    </div>
+        <div>
+        <label for="password">password</label>
+        <input type="text" id="password" password="password" required/>
+    </div>
+    <button type="submit">login</button>
+</form>
+<a href="/register">Register</a>
